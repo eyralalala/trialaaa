@@ -17,7 +17,7 @@
         </thead>
 
         <tbody>
-        	@foreach($sampledata as $data)
+        	@foreach($sampledata as $data) 
         	<tr>	
         		<td>{{ $data->first_name }}</td>
         		<td>{{ $data->last_name }}</td>

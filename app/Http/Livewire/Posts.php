@@ -1,18 +1,18 @@
 <?php
 
 namespace App\Http\Livewire;
-
+use App\Models\Sampledata;
 use Livewire\Component;
 
 class Posts extends Component
 {
-    public $sampledata, $first_name, $last_name, $gender, $data_id;
+    public $sampledata, $first_name, $last_name, $gender, $data_id; //variable to store array
 
     public function render()
     {
-        $this->sampledata = Sampledata::all();
+        $this->sampledata = Sampledata::all();// method to fetch from table
 
-        return view('livewire.posts');
+        return view('livewire.posts'); 
     }
 
     public function resetInputFields()
